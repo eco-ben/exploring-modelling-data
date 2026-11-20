@@ -1,0 +1,5 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "julia.environmentPath": "c:\\Users\\uqbgrier\\Documents\\Repos\\exploring-modelling-data"
+}
