@@ -75,6 +75,7 @@ for file in csv_files
     
     select!(layer_df, Not(:the_geom))
     GDF.setgeometrycolumn!(layer_df, :geometry)
+    GDF.setcrs!(layer_df, crs(base_df))
     
-    GDF.write(filename, layer_df[:, [:geometry, :time_period, :catch_kg_total]])
+    GDF.write(out_filename, layer_df[:, [:geometry, :time_period, :catch_kg_total]])
 end
