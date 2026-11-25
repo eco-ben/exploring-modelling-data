@@ -2,7 +2,7 @@
 
 julia_version = "1.13.1"
 manifest_format = "2.1"
-project_hash = "7ec2741bafd17822b2e6e36da7fde1cd860e0a5b"
+project_hash = "47554c48d4a006fd17e2d30151f14577b669b02d"
 
 [[deps.ADTypes]]
 deps = ["PrecompileTools"]
@@ -1879,6 +1879,19 @@ git-tree-sha1 = "283bf85d4a767481dd924dff0eee1735e95f449e"
 registries = "General"
 uuid = "46d2c3a1-f734-5fdb-9937-b9b9aeba4221"
 version = "0.2.7"
+
+[[deps.NCDatasets]]
+deps = ["CFTime", "CommonDataModel", "DataStructures", "Dates", "DiskArrays", "NetCDF_jll", "NetworkOptions", "Printf"]
+git-tree-sha1 = "5eb7747d10437f5acb2675c1f865ffa0353f3f9c"
+registries = "General"
+uuid = "85f8d34a-cbdd-5861-8df4-14fed0d494ab"
+version = "0.14.15"
+
+    [deps.NCDatasets.extensions]
+    NCDatasetsMPIExt = "MPI"
+
+    [deps.NCDatasets.weakdeps]
+    MPI = "da04e1cc-30fd-572f-bb4f-1f8673147195"
 
 [[deps.NLSolversBase]]
 deps = ["ADTypes", "DifferentiationInterface", "Distributed", "FiniteDiff", "ForwardDiff"]
